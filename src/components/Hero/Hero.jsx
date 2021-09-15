@@ -5,8 +5,9 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
+  const { hero, footer } = useContext(PortfolioContext);
   const { title, name, subtitle, cta } = hero;
+  const { networks } = footer;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,6 +24,23 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
+      <nav>
+        {networks &&
+          networks.map((network) => {
+            const { id, name: networkName, url } = network;
+            return (
+              <a
+                key={id}
+                href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label={networkName}
+              >
+                <i className={`fa fa-${networkName || 'refresh'} fa-inverse`} />
+              </a>
+            );
+          })}
+      </nav>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
@@ -35,8 +53,23 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
+              <Link to="about" smooth duration={1000}>
+                Skills
+              </Link>
+            </span>
+            <span className="cta-btn cta-btn--hero">
               <Link to="projects" smooth duration={1000}>
-                {cta || 'Know more'}
+                Projects
+              </Link>
+            </span>
+            <span className="cta-btn cta-btn--hero">
+              <Link to="about" smooth duration={1000}>
+                About
+              </Link>
+            </span>
+            <span className="cta-btn cta-btn--hero">
+              <Link to="contact" smooth duration={1000}>
+                Contact
               </Link>
             </span>
           </p>
