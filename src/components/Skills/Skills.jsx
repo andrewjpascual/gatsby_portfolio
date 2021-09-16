@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-// import skillsImg from '../Image/skillsImg';
 import PortfolioContext from '../../context/context';
+//Import all skill png
 import html from '../../images/html.png';
 import css from '../../images/css.png';
 import javascript from '../../images/javascript.png';
@@ -17,6 +17,10 @@ import node from '../../images/node.png';
 import heroku from '../../images/heroku.png';
 import react from '../../images/react.png';
 import git from '../../images/git.png';
+import postgre from '../../images/postgre.png';
+import gatsby from '../../images/gatsby.png';
+import mysql from '../../images/mysql.png';
+import sass from '../../images/sass.png';
 
 const Skills = () => {
   const { skills } = useContext(PortfolioContext);
@@ -94,6 +98,22 @@ const Skills = () => {
                 <div className="skills-wrapper__box">
                   <img src={java} style={{ height: '6.25rem' }} />
                   Java
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={postgre} style={{ height: '6.25rem' }} />
+                  PostgreSQL
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={mysql} style={{ height: '6.25rem' }} />
+                  MySQL
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={gatsby} style={{ height: '6.25rem' }} />
+                  Gatsby
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={sass} style={{ height: '6.25rem' }} />
+                  Sass
                 </div>
               </div>
             </Col>

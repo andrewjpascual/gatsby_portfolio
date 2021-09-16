@@ -25,21 +25,23 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <nav>
-        {networks &&
-          networks.map((network) => {
-            const { id, name: networkName, url } = network;
-            return (
-              <a
-                key={id}
-                href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label={networkName}
-              >
-                <i className={`fa fa-${networkName || 'refresh'} fa-inverse`} />
-              </a>
-            );
-          })}
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+          {networks &&
+            networks.map((network) => {
+              const { id, name: networkName, url } = network;
+              return (
+                <a
+                  key={id}
+                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label={networkName}
+                >
+                  <i className={`fa fa-${networkName || 'refresh'} fa-inverse`} />
+                </a>
+              );
+            })}
+        </Fade>
       </nav>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
