@@ -4,6 +4,19 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 // import skillsImg from '../Image/skillsImg';
 import PortfolioContext from '../../context/context';
+import html from '../../images/html.png';
+import css from '../../images/css.png';
+import javascript from '../../images/javascript.png';
+import agile from '../../images/agile.png';
+import api from '../../images/api.png';
+import python from '../../images/python.png';
+import java from '../../images/java.png';
+import bootstrap from '../../images/bootstrap.png';
+import express from '../../images/express.png';
+import node from '../../images/node.png';
+import heroku from '../../images/heroku.png';
+import react from '../../images/react.png';
+import git from '../../images/git.png';
 
 const Skills = () => {
   const { skills } = useContext(PortfolioContext);
@@ -26,21 +39,66 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <Title title="Skills" />
-        <Row className="skills-wrapper">
-          {/* Front end Skills */}
-
-          {/* This is the Back End */}
-          <Col md={6} sm={12}>
-            <Fade
-              left={isDesktop}
-              bottom={isMobile}
-              duration={1000}
-              delay={1000}
-              distance="30px"
-            ></Fade>
-          </Col>
-          {/* These are the Tools  */}
-        </Row>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Row className="skills-wrapper">
+            <Col md={12} sm={12}>
+              <div className="skills-wrapper__container">
+                <div className="skills-wrapper__box">
+                  <img src={html} style={{ height: '6.25rem' }} />
+                  HTML
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={css} style={{ height: '6.25rem' }} />
+                  CSS
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={javascript} style={{ height: '6.25rem' }} />
+                  JavaScript
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={react} style={{ height: '6.25rem' }} />
+                  React
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={bootstrap} style={{ height: '6.25rem' }} />
+                  Bootstrap
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={git} style={{ height: '6.25rem' }} />
+                  Git
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={agile} style={{ height: '6.25rem' }} />
+                  Agile
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={node} style={{ height: '6.25rem' }} />
+                  Node
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={express} style={{ height: '6.25rem' }} />
+                  Express
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={api} style={{ height: '6.25rem' }} />
+                  RESTful API
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={heroku} style={{ height: '6.25rem' }} />
+                  Heroku
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={python} style={{ height: '6.25rem' }} />
+                  Python
+                </div>
+                <div className="skills-wrapper__box">
+                  <img src={java} style={{ height: '6.25rem' }} />
+                  Java
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Fade>
       </Container>
     </section>
   );

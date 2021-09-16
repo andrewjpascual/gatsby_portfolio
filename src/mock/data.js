@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: "Hi, I'm",
   name: 'Andrew.',
-  subtitle: "I'm a Software Developer",
+  subtitle: "I'm a Software Developer.",
   cta: '',
 };
 
@@ -26,11 +26,11 @@ export const aboutData = {
 
 // SKILLS DATA
 export const skillsData = {
-  img: '',
-  paragraphOne: '',
+  img: '', //This is all mock data
+  paragraphOne: '', //Nothing here will affect skills section
   paragraphTwo: '',
   paragraphThree: '',
-  resume: '', // if no resume, the button will not show up
+  resume: '',
 };
 
 // PROJECTS DATA
