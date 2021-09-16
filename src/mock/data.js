@@ -24,6 +24,15 @@ export const aboutData = {
   resume: '', // if no resume, the button will not show up
 };
 
+// SKILLS DATA
+export const skillsData = {
+  img: '',
+  paragraphOne: '',
+  paragraphTwo: '',
+  paragraphThree: '',
+  resume: '', // if no resume, the button will not show up
+};
+
 // PROJECTS DATA
 export const projectsData = [
   {
