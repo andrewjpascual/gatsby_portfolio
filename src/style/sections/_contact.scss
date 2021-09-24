@@ -32,5 +32,54 @@
         font-size: 2rem;
       }
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.6rem;
+      text-align: left;
+      font-weight: bold;
+
+      button {
+        font-size: 2.4rem;
+      }
+
+      .form-label {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // @include respond(tab-land) {
+        //   width: 70vw;
+        // }
+        // @include respond(phone) {
+        //   width: 90vw;
+        // }
+
+        input {
+          // border-radius: 5px;
+
+          width: 35vw;
+          @include respond(tab-land) {
+            width: 50vw;
+          }
+          @include respond(phone) {
+            width: 70vw;
+          }
+        }
+        textarea {
+          // border-radius: 5px;
+          width: 35vw;
+          @include respond(tab-land) {
+            width: 50vw;
+          }
+          @include respond(phone) {
+            width: 70vw;
+          }
+        }
+      }
+    }
   }
 }

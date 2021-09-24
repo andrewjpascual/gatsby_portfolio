@@ -63,10 +63,7 @@ const Skills = () => {
                   <img src={react} style={{ height: '6.25rem' }} />
                   React
                 </div>
-                <div className="skills-wrapper__box">
-                  <img src={bootstrap} style={{ height: '6.25rem' }} />
-                  Bootstrap
-                </div>
+
                 <div className="skills-wrapper__box">
                   <img src={git} style={{ height: '6.25rem' }} />
                   Git
@@ -103,17 +100,10 @@ const Skills = () => {
                   <img src={postgre} style={{ height: '6.25rem' }} />
                   PostgreSQL
                 </div>
-                <div className="skills-wrapper__box">
-                  <img src={mysql} style={{ height: '6.25rem' }} />
-                  MySQL
-                </div>
+
                 <div className="skills-wrapper__box">
                   <img src={gatsby} style={{ height: '6.25rem' }} />
                   Gatsby
-                </div>
-                <div className="skills-wrapper__box">
-                  <img src={sass} style={{ height: '6.25rem' }} />
-                  Sass
                 </div>
               </div>
             </Col>

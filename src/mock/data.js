@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne:
     "I am a recent graduate from California State University, Sacramento with a Bachelor's in Computer Science. With every new challenge, I am always eager to learn something new and continue strengthening my current skillset.",
   paragraphTwo:
-    'Technology has always been a large interest in my life and I am excited to showcase my knowledge through new and creative applications. Currently, I specialize in front-end web development where I want to combine modern web technologies with creative visuals and a strong attention to detail to guarantee positive user experiences.  ',
+    'Technology has always been a large interest in my life and I am excited to showcase my knowledge through new and creative applications. Currently, I specialize in front-end web development where I want to combine modern web technologies with creative visuals and a strong attention to detail to guarantee positive user experiences. Nevertheless, I have ',
   paragraphThree:
     'When I am not coding, I am usually listening to music, lifting weights, or hanging out with my friends and playing games.',
   resume: '', // if no resume, the button will not show up

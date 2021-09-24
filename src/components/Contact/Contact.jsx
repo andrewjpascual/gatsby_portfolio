@@ -12,29 +12,31 @@ const Contact = () => {
     <section id="contact">
       <Container>
         <Title title="Contact" />
-        <Fade bottom duration={1000} delay={800} distance="30px">
+        <Fade bottom duration={750} delay={500} distance="30px">
           <div className="contact-wrapper">
-            <p className="contact-wrapper__text">{cta || 'Feel free to reach out to me!'}</p>
-            <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>
-                  Your Name: <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" />
-                </label>
-              </p>
-
-              <p>
-                <label>
-                  Message: <textarea name="message"></textarea>
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              attribute="netlify-honeypot='bot-field'"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
+              <label className="form-label">
+                Full Name:*
+                <input className="form-input" type="text" name="name" required />
+              </label>
+              <label className="form-label">
+                Your Email:*
+                <input required type="email" name="email" />
+              </label>
+              <label className="form-label">
+                Message:*
+                <textarea required name="message" rows="6"></textarea>
+              </label>
+              <button className="cta-btn cta-btn--hero" type="submit">
+                Send
+              </button>
             </form>
           </div>
         </Fade>
