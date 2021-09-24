@@ -28,7 +28,7 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={12} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
@@ -42,7 +42,7 @@ const About = () => {
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
                 {resume && (
-                  <span className="d-flex mt-3">
+                  <span className="d-flex mt-3" style={{ justifyContent: 'center' }}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"

@@ -43,7 +43,7 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <Title title="Skills" />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={750} delay={500} distance="30px">
           <Row className="skills-wrapper">
             <Col md={12} sm={12}>
               <div className="skills-wrapper__container">

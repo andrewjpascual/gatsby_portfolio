@@ -19,12 +19,12 @@ export const heroData = {
 export const aboutData = {
   img: '',
   paragraphOne:
-    "I am a recent graduate from California State University, Sacramento with a Bachelor's in Computer Science. With every new challenge, I am always eager to learn something new and continue strengthening my current skillset.",
+    "I am a recent graduate from California State University, Sacramento with a Bachelor's in Computer Science. With every new challenge, I am always eager to learn something new and keep a positive mindset.",
   paragraphTwo:
-    'Technology has always been a large interest in my life and I am excited to showcase my knowledge through new and creative applications. Currently, I specialize in front-end web development where I want to combine modern web technologies with creative visuals and a strong attention to detail to guarantee positive user experiences. Nevertheless, I have ',
+    'Technology has always been a large interest in my life and I am excited to showcase my knowledge through new and creative applications. Currently, I specialize in front-end web development where I want to combine modern web technologies with creative visuals and a strong attention to detail to guarantee positive user experiences. Nevertheless, I enjoy working and learning with back-end technologies occasionally. ',
   paragraphThree:
     'When I am not coding, I am usually listening to music, lifting weights, or hanging out with my friends and playing games.',
-  resume: '', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1G3UABfuYnCU9rPeeP4HqX95zYoVVmlYq/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
@@ -40,39 +40,47 @@ export const skillsData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'TheOpenedBox.jpg',
+    title: 'The Opened Box',
+    info: 'An interactive inventory database mangement system where the client would be able to import shipment manifests, cross check inventory that actually arrived within the manifest, and have the ability to visualize, search, sort, and export a confirmed inventory. ',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
+    stack: ['NodeJS', 'Express', 'PostgreSQL', 'HTML', 'CSS', 'Heroku', 'Authpack'],
+    note: 'This project is under an NDA and being used privately by a client. Source code examples and demos can be shown upon request. ',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'Techshop.jpg',
+    title: 'Tech Shop',
+    info: 'A mock e-commerce website where the user can find a landing page with high-end computer parts and accessories. Currently includes a products page with imported products from CommerceJS API and a shopping cart. ',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://techshop-ap.netlify.app',
+    repo: 'https://github.com/andrewjpascual/techshop', // if no repo, the button will not show up
+    stack: ['React', 'HTML', 'CSS', 'Material UI', 'CommerceJS'],
+    note: 'Site is still a work in progress, but it will be carried out in the future.',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'Pokedex.jpg',
+    title: 'Pokedex React',
+    info: 'A simple and modern pokédex to look up pokémons. Users can search, sort, and look up individual pokémon details. This was my first project to consume REST APIs.',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://pokedex-ap.netlify.app',
+    repo: 'https://github.com/andrewjpascual/Pokedex', // if no repo, the button will not show up
+    stack: ['React', 'HTML', 'CSS', 'Bootstrap', 'PokéAPI', 'Axios'],
+    note: 'Data was fetched from the amazing PokéAPI, an open-source public API that serves all pokemon data. ',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'website.jpg',
+    title: 'Portfolio',
+    info: 'This website was made through GatsbyJS, where I wanted to utilize the speed that comes from this static site generator. Consequently, I am able to focus on delivering some of my best works and related information easily. ',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/andrewjpascual/gatsby_portfolio', // if no repo, the button will not show up
+    stack: ['Gatsby', 'React', 'Bootstrap', 'SCSS', 'Netlify', 'GraphQL'],
+    note: '',
   },
 ];
 
@@ -89,12 +97,17 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'http://www.linkedin.com/in/andrewjpascual',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'http://github.com/andrewjpascual',
+    },
+    {
+      id: nanoid(),
+      name: 'file',
+      url: 'https://drive.google.com/file/d/1G3UABfuYnCU9rPeeP4HqX95zYoVVmlYq/view?usp=sharing',
     },
   ],
 };

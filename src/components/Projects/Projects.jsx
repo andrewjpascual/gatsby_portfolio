@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, stack, note } = project;
 
             return (
               <Row key={id}>
@@ -36,27 +36,42 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
+                    duration={750}
                     delay={500}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
+                        <div className="tech-stack">
+                          {stack.map((tech, idx) => {
+                            return (
+                              <div className="tech" key={idx}>
+                                {tech}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+
+                      <div>
                         <p>
                           {info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        {note && <p className="italics note">Note: {note}</p>}
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
@@ -75,8 +90,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={750}
+                    delay={500}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
