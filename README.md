@@ -1,16 +1,6 @@
 # Gatsby Portfolio
 
-This is my portfolio and holds some of my current best works.
-
-## Table of contents
-
--  [About](#about)
--  [Technologies](#technologies)
--  [Features](#features)
-
-## About
-
-Within this project I wanted to create a web portfolio in order to display some of the tech stack skills I possess. Additionally, I wanted to try out Gatsby and it's features to quickly implement my 
+Within this project I wanted to create a web portfolio in order to display some of the tech stack skills I possess. Additionally, I wanted to try out Gatsby and it's features and utilize a quick and responsive static site.
 
 ## Features
 
@@ -22,6 +12,8 @@ Within this project I wanted to create a web portfolio in order to display some 
 ⚡️ Image optimization with Gatsby\
 ⚡️ Easy site customization\
 ⚡️ Well organized documentation
+⚡️ Netlify contact form
+
 
 ## Technologies
 
