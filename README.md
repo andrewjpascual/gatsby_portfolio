@@ -11,7 +11,7 @@ Within this project I wanted to create a web portfolio in order to display some 
 ⚡️ Configurable color scheme\
 ⚡️ Image optimization with Gatsby\
 ⚡️ Easy site customization\
-⚡️ Well organized documentation
+⚡️ Well organized documentation\
 ⚡️ Netlify contact form
 
 
