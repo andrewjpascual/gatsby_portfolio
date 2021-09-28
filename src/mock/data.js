@@ -24,7 +24,7 @@ export const aboutData = {
     'Technology has always been a large interest in my life and I am excited to showcase my knowledge through new and creative applications. Currently, I specialize in front-end web development where I want to combine modern web technologies with creative visuals and a strong attention to detail to guarantee positive user experiences. Nevertheless, I enjoy working and learning with back-end technologies occasionally. ',
   paragraphThree:
     'When I am not coding, I am usually listening to music, lifting weights, or hanging out with my friends and playing games.',
-  resume: 'https://drive.google.com/file/d/1G3UABfuYnCU9rPeeP4HqX95zYoVVmlYq/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1_n7aHn47cMVUt6jy2NdSPzZPRYPuA7uB/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
@@ -107,7 +107,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'file',
-      url: 'https://drive.google.com/file/d/1G3UABfuYnCU9rPeeP4HqX95zYoVVmlYq/view?usp=sharing',
+      url: 'https://drive.google.com/file/d/1_n7aHn47cMVUt6jy2NdSPzZPRYPuA7uB/view?usp=sharing',
     },
   ],
 };
