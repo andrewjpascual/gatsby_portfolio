@@ -51,6 +51,17 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'tracker.jpg',
+    title: 'Expense Tracker',
+    info: 'My MERN stack expense tracker that supports CRUD functionalities. Allows the user to keep track of transactions and visualize where the allocations go. ',
+    info2: '',
+    url: 'https://apexpenses.herokuapp.com/',
+    repo: 'https://github.com/andrewjpascual/expense-tracker', // if no repo, the button will not show up
+    stack: ['MongoDB', 'Express', 'React', 'NodeJS', 'ChartJS', 'Heroku', 'HTML', 'CSS'],
+    note: 'The site is hosted through a free Heroku account, so please give it a moment to load.',
+  },
+  {
+    id: nanoid(),
     img: 'Techshop.jpg',
     title: 'Tech Shop',
     info: 'A mock e-commerce website where the user can find a landing page with high-end computer parts and accessories. Currently includes a products page with imported products from CommerceJS API and a shopping cart. ',
@@ -63,12 +74,12 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'Pokedex.jpg',
-    title: 'Pokedex React',
+    title: 'Pokédex React',
     info: 'A simple and modern pokédex to look up pokémons. Users can search, sort, and look up individual pokémon details. This was my first project to consume REST APIs.',
     info2: '',
     url: 'https://pokedex-ap.netlify.app',
     repo: 'https://github.com/andrewjpascual/Pokedex', // if no repo, the button will not show up
-    stack: ['React', 'HTML', 'CSS', 'Bootstrap', 'PokéAPI', 'Axios'],
+    stack: ['React', 'HTML', 'CSS', 'Bootstrap', 'PokéAPI'],
     note: 'Data was fetched from the amazing PokéAPI, an open-source public API that serves all pokemon data. ',
   },
   {
