@@ -24,6 +24,6 @@ Within this project I wanted to create a web portfolio in order to display some 
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
+
 
 
